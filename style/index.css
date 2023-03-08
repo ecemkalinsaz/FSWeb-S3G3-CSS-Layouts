@@ -1,1 +1,186 @@
-/* CSS stillerinizi buraya girin */
+* {
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: "Shantell Sans", cursive;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+header ul li {
+  margin: 5px;
+  padding: 10px 20px;
+  background: #212121;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+a {
+  font-family: "Nanum Gothic", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.top-section {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  padding: 0 10%;
+  letter-spacing: 1.1px;
+  line-height: 2;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.image {
+  width: 100%;
+  height: 400px;
+  background: url(https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
+  background-size: cover;
+  background-position: center center;
+}
+
+.cards {
+  display: flex;
+}
+
+.cards div {
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  flex-grow: 1;
+  text-align: center;
+  margin: 10px;
+  height: 300px;
+
+  /* Kutunun disina herhangi bir tasma olursa gizle */
+  overflow: hidden;
+}
+
+.cards h3 {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.project1 {
+  background-image: url(/photos/project1.png);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-position: center center;
+}
+
+.project2 {
+  background-image: url(/photos/project2.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.project3 {
+  background-image: url(https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+  background-size: cover;
+  background-position: center center;
+}
+
+.project4 {
+  background-image: url(/photos/project4.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+h3 {
+  margin: 0;
+  height: 100px;
+  display: flex;
+
+  /* Dikeyde ortala */
+  align-items: center;
+
+  /* Yatayda Ortala */
+  justify-content: center;
+
+  color: white;
+
+  /* Gradient effect */
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(51, 121, 131, 1) 48%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.last-section {
+  width: 100%;
+  margin-top: 40px;
+  height: 130px;
+  background: #f1f8e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.last-section button {
+  box-shadow: 3px 5px 7px 1px #37676e;
+  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color: #599bb3;
+  border-radius: 5px;
+  border: 1px solid #5f859e;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px 27px;
+  text-decoration: none;
+}
+
+.last-section button:hover {
+  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color: #408c99;
+}
+
+.last-section button:active {
+  position: relative;
+  top: 1px;
+}
+
+footer {
+  text-align: center;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+footer p {
+  font-family: "Shantell Sans", cursive;
+}
+
+.content {
+  height: 500px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content img {
+  border-radius: 50%;
+  height: 300px;
+}
