@@ -35,6 +35,7 @@ a {
   font-family: "Nanum Gothic", sans-serif;
   color: white;
   text-decoration: none;
+  width: 100%;
 }
 
 .top-section {
@@ -66,8 +67,8 @@ p {
   border-radius: 10px;
   flex-grow: 1;
   text-align: center;
-  margin: 10px;
   height: 300px;
+  margin: 10px;
 
   /* Kutunun disina herhangi bir tasma olursa gizle */
   overflow: hidden;
@@ -145,7 +146,7 @@ h3 {
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
-  font-family: Arial;
+  font-family: "Nanum Gothic", sans-serif;
   font-size: 17px;
   padding: 8px 27px;
   text-decoration: none;
@@ -183,4 +184,63 @@ footer p {
 .content img {
   border-radius: 50%;
   height: 300px;
+}
+
+/* @media screen and (min-width: 800px) {
+   Bu stil, ekran genişliği 800 pikselden büyük olan cihazlar için geçerli olacak
+ */
+
+@media screen and (max-width: 500px) {
+  /* Bu stil, ekran genişliği 500 pikselden küçük olan cihazlar için geçerli olacak */
+  .navigation {
+    text-align: center;
+  }
+
+  header h1 {
+    display: block;
+    font-size: 1.75em;
+  }
+
+  header ul {
+    display: inline-block;
+  }
+
+  header ul li {
+    text-align: center;
+  }
+
+  .cards {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .cards div {
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  .last-section {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+  .cards {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .cards div {
+    width: 45%;
+    float: left;
+    box-sizing: border-box;
+    margin: 30px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-100%);
+  }
+
+  .cards div:nth-child(odd) {
+    margin-right: 10px;
+  }
 }
